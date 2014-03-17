@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0e0e0"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/player_one"
+        android:id="@+id/num_of_player"
+        android:gravity="center_horizontal"
+        android:background="@drawable/card"
+        android:layout_gravity="center_horizontal"
+        android:textSize="40sp"
+        android:layout_marginTop="40dp"
+        android:textColor="#0605cf" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:weightSum="7">
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/X"
+            android:id="@+id/textView2"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/card"
+            android:layout_marginRight="2dp"
+            android:textColor="#009600" />
+
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/player_1"
+            android:id="@+id/textView4"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:background="@drawable/card"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="2dp"
+            android:textColor="#009600" />
+
+        <EditText
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:id="@+id/edit_player_one"
+            android:hint="@string/player_one_hint"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            android:layout_weight="4"
+            android:background="@drawable/card"
+            android:layout_marginLeft="2dp"
+            android:textColor="#009600" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:weightSum="7">
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/O"
+            android:id="@+id/textView3"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/card"
+            android:layout_marginRight="2dp"
+            android:textColor="#be0000" />
+
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/player_2"
+            android:id="@+id/textView5"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:background="@drawable/card"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:textColor="#be0000" />
+
+        <EditText
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:id="@+id/edit_player_two"
+            android:hint="@string/player_two_hint"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            android:layout_weight="4"
+            android:background="@drawable/card"
+            android:textColor="#be0000"
+            android:layout_marginLeft="2dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/start_game_button"
+        android:id="@+id/start_game"
+        android:layout_marginTop="35dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/card_button" />
+</LinearLayout>

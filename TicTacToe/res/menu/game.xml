@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.akshay.tictactoe.GameActivity">
+
+    <item
+        android:id="@+id/action_new"
+        android:title="@string/action_new"
+        android:orderInCategory="100"
+        android:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_main_menu"
+        android:title="@string/action_main_menu"
+        android:orderInCategory="100"
+        android:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/action_quit"
+        android:title="@string/action_quit"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+</menu>

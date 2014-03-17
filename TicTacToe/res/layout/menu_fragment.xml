@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#e0e0e0">
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/tictactoe"
+        android:id="@+id/textView"
+        android:layout_marginTop="61dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/one_player"
+        android:layout_alignStart="@+id/one_player"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#ffaf1723"
+        android:background="@drawable/card"
+        android:textSize="40sp" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/player_one"
+        android:id="@+id/one_player"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/textView"
+        android:textSize="25sp"
+        android:background="@drawable/card_button"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/player_two"
+        android:id="@+id/two_player"
+        android:layout_below="@+id/one_player"
+        android:layout_alignLeft="@+id/one_player"
+        android:layout_alignStart="@+id/one_player"
+        android:textSize="25sp"
+        android:background="@drawable/card_button"
+        android:layout_marginTop="37dp" />
+
+</RelativeLayout>

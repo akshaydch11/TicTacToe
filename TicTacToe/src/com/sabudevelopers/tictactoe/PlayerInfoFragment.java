@@ -1,5 +1,6 @@
-package com.akshay.tictactoe;
+package com.sabudevelopers.tictactoe;
 
+import android.annotation.SuppressLint;
 import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,6 +17,7 @@ import android.widget.TextView;
  * This fragment is used for taking information about players
  * like name of user.
  */
+@SuppressLint("ValidFragment")
 public class PlayerInfoFragment extends Fragment {
 
     TextView num_players;
@@ -24,7 +26,8 @@ public class PlayerInfoFragment extends Fragment {
     Button startNewGame;
     EditText playerOneEdit, playerTwoEdit;
 
-    public PlayerInfoFragment(String players) {
+
+	public PlayerInfoFragment(String players) {
         playerNumbers = players;
     }
 
